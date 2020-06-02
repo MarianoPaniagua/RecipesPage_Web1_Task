@@ -1,0 +1,20 @@
+thead {
+    color: #4a4a4a;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+td {
+    padding: 1vh;
+    border: 1px solid black;
+    width: 50%;
+}
+
+th {
+    width: 10%;
+    border: 1px solid grey;
+}
+
+div {
+    width: 100%;
+}
