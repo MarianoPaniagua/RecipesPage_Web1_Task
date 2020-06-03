@@ -11,6 +11,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 
+
 <body>
     <nav>
         <div class="logo_container">
@@ -22,8 +23,8 @@
         <div>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-                 <i class="fas fa-bars"></i>
-            </label>
+                     <i class="fas fa-bars"></i>
+                </label>
         </div>
         <div>
             <input type="checkbox" id="check">
@@ -34,37 +35,26 @@
             </ul>
         </div>
     </nav>
-    <main>
-        <div class="main_div">
-            <div class="div_inside_main">
-                <a href="chocolatemuffin.html">
-                    <img src="img/chocolate_muffin.jpg" alt="">
-                </a>
-                <div class="description_float">
-                    <p class="short_text"> Chocolate Muffin </p>
-                    <p class="large_text">Delicious, soft and fluffy chocolate muffin with a dulce de leche heart. </p>
-                </div>
-            </div>
-            <div class="div_inside_main">
-                <a href="browniecup.html">
-                    <img src="img/brownie_cup.jpg" alt="">
-                </a>
-                <div class="description_float">
-                    <p class="short_text"> Brownie Cup </p>
-                    <p class="large_text"> Fresh glass of brownie to entertain any guest. </p>
-                </div>
-            </div>
-            <div class="div_inside_main">
-                <a href="chocolatecheescake.html">
-                    <img src="img/chocolate_cheescake.jpg" alt="">
-                </a>
-                <div class="description_float">
-                    <p class="short_text"> Chocolate Cheescake </p>
-                    <p class="large_text">Cheese cake with dark chocolate cone and strawberries in syrup.</p>
-                </div>
-            </div>
+    <main class="finished_recipe_center_div">
+        <div class="finished_recipe_img">
+            <img src="./img/chicken_sandwich.jpg" alt="">
+        </div>
+        <div class="ingredients_list">
+            <table class="recipe_table" id="chickenSandwich">
+                <thead>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="text_recipe">
+            <p>*Grill the chicken and then in a saucepan add the soy with the sugar, add the chicken and let reduce over low heat.<br> *We toast the bread and then add lettuce, onion, avocado and peppers.
+            </p>
         </div>
     </main>
+
     <footer>
         <ul class="ulSocialIcons">
             <li><a href="https://www.twitch.tv/"><i class="fab fa-twitch" ></i></a></li>
@@ -75,6 +65,7 @@
         <div class="footerMessage">Felix and Mariano team - Web I - 2020</div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/recipesInfo.js"></script>
 </body>
 
 </html>
