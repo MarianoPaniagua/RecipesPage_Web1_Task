@@ -1,5 +1,4 @@
-//menu
-
+//menu css
 $('#check').click(function() {
     $('.menu').toggleClass("moveMenu");
 });

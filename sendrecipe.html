@@ -7,10 +7,6 @@
     <title>Quarantine recipes</title>
     <link rel="shortcut icon" href="img/logo.ico">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/jquery.serialize-object.min.js"></script>
-
 </head>
 
 <body>
@@ -33,6 +29,7 @@
                 <li><a class="nav-li" href="index.html">Home</a></li>
                 <li><a class="nav-li" href="contact.html">Contact</a></li>
                 <li><a class="nav-li" href="sendrecipe.html">Send a recipe</a></li>
+                <li><a class="nav-li" href="cookingtechniques.html">Cooking Techniques</a></li>
             </ul>
         </div>
     </nav>
@@ -40,45 +37,38 @@
 
         <div class="center_div_send_recipe">
             <div id="message_send_recipe">
-                <span>Send a recipe to us and we <br> post it in the future</span>
+                <span>Welcome to our recipes data base<br> Feel free to help us maintain it</span>
+            </div>
+            <div id="filter-div">
+                <button type="button" id="btn-show-fiter">Filter</button>
+                <input class="filter-input hide" type="text" placeholder="Recipe" name="RecipeF" id="RecipeF">
             </div>
             <div class="div_table_send_recipe">
                 <table id="send_recipe_table">
                     <thead>
-                        <th>Ingredients</th>
-                        <th>Quantity</th>
+                        <th>Recipe</th>
+                        <th>Author</th>
+                        <th>Function</th>
                     </thead>
                     <tbody>
                     </tbody>
                 </table>
             </div>
             <div id="message_send_recipe">
-                <span>Add the ingredient and quantity</span>
+                <span>Add the recipe and author</span>
             </div>
             <div id="form_div_send_recipe">
-                <form id="send_recipe_form" action="">
+                <form id="add_ing_form" action="">
                     <div class="input-container">
-                        <input class="input_send_recipe" type="text" value="Ingredient" name="Ingredient" id="Ingredient">
-                        <input class="input_send_recipe" type="text" value="Quantity" name="Quantity" id="Quantity">
+                        <input class="input_send_recipe" type="text" placeholder="Recipe" name="Recipe" id="Recipe">
+                        <input class="input_send_recipe" type="text" placeholder="Author" name="Author" id="Author">
                     </div>
                     <div class="btn-container">
-                        <button type="button" id="btn-add-ing">Add</button>
-                        <button type="button" id="btn-delete-ing">Delete last</button>
-                        <button type="button" id="btn-delete-all">Delete all</button>
+                        <button type="button" id="btn-add-ing">Add new recipe</button>
                         <button type="button" id="btn-random">Add random stuff</button>
                     </div>
                 </form>
             </div>
-            <div id="message_send_recipe">
-                <span>Add the steps</span>
-            </div>
-            <div class="text_area_div">
-                <textarea class="textArea" rows="10" cols="50"></textarea>
-            </div>
-            <div id="wrapper">
-                <button type="button" id="btn-submit">Submit you recipe</button>
-            </div>
-            <div class="submitMessage"> Thanks! You recipe was sent</div>
         </div>
     </main>
     <footer>
@@ -88,8 +78,11 @@
             <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f" ></i></a></li>
             <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a></li>
         </ul>
-        <div class="footerMessage">Felix and Mariano team - Web I - 2020</div>
+        <div class="footerMessage">Mariano Paniagua - Web I - 2020</div>
     </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.serialize-object.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/sendRecipe.js"></script>
 </body>

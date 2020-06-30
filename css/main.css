@@ -106,6 +106,15 @@
         }
     }
     
+    @media (min-width:768px) and (max-width:1023px) {
+        #div-from-nav {
+            line-height: 120px;
+        }
+        label.logo {
+            display: none;
+        }
+    }
+    
     .recipes_home {
         margin-top: 5vh;
     }
@@ -419,6 +428,27 @@
     .main_div_send_recipe {
         backdrop-filter: blur(10px);
         margin: 2vh;
+        margin-bottom: 40vh;
+    }
+    
+    .functionButtons {
+        width: 50%;
+        color: white;
+        margin-left: 25%;
+    }
+    
+    #filter-div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    
+    .editBtn {
+        background-color: #9bca9b;
+    }
+    
+    .deleteBtn {
+        background-color: #da6e6e;
     }
     
     #message_send_recipe {
@@ -429,7 +459,7 @@
         background-color: rgb(226, 218, 218);
         text-align: center;
         box-shadow: 0px 0px 0px 4px rgba(211, 206, 206, 0.3);
-        width: 50%;
+        width: 60%;
         font-family: sans-serif;
     }
     
@@ -588,4 +618,71 @@
         .div_inside_main img {
             max-height: 15vw;
         }
+    }
+    /*Techniques page*/
+    
+    #technique-main {
+        min-height: 90vh;
+    }
+    
+    .showDivToEdit {
+        width: 99px;
+    }
+    
+    .input_modify_recipe {
+        width: 30vw;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .formToEdit {
+        display: flex;
+    }
+    
+    .editSubmitBtn {
+        width: 40px;
+    }
+    
+    .pFromServer {
+        text-align: center;
+        margin: 8px;
+        border: solid 2px darkgray;
+    }
+    
+    .imgFromServer {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8px;
+        display: block;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .formatDiv {
+        border: 2px #aebcae solid;
+        background-color: beige;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sans-serif;
+        margin-top: 5px;
+    }
+    
+    @media (min-width:768px) {
+        .formatDiv {
+            width: 40%;
+        }
+    }
+    
+    #tecnhique-div {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .cooking-btn {
+        margin: 2px;
     }
