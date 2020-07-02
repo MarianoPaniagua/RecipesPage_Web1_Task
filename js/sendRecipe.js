@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let baseUrl = "https://web-unicen.herokuapp.com/api/groups/128paniagua/recipes";
 
     getAndUpdateTable();
-    //setInterval(getAndUpdateTable, 10000);
+    var interval = setInterval(getAndUpdateTable, 10000);
 
     function getAndUpdateTable() {
         fetch(baseUrl)
@@ -203,7 +203,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function showFilter() {
+        clearInterval(interval);
         document.getElementById("RecipeF").classList.toggle("hide");
+        document.getElementById("btn-show-fiter").removeEventListener("click", showFilter);
+        document.getElementById("btn-show-fiter").addEventListener("click", showFilter2);
+    }
+
+    function showFilter2() {
+        document.getElementById("RecipeF").classList.toggle("hide");
+        document.getElementById("btn-show-fiter").removeEventListener("click", showFilter2);
+        document.getElementById("btn-show-fiter").addEventListener("click", showFilter);
+        interval = setInterval(getAndUpdateTable, 10000);
     }
 
     function filterTable() {
